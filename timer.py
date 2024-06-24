@@ -16,7 +16,7 @@ def timer(iters=1):
                 end = time.perf_counter()
                 total += end - start
             print(
-                f"Среднее время выполнения {func.__name__}: {round(total/iters, 4)} сек."
+                f"Среднее время выполнения(количество запусков:{iters}) {func.__name__}: {round(total/iters, 4)} сек."
             )
             return value
         return wrapper
